@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Chrome, Firefox OS and Opera Status Bar Color -->
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+<link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/notablog.css">
+<!-- Favicon -->
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🤘&lt;/text&gt;&lt;/svg&gt;">
+
+<style>
+  :root {
+    font-size: 20px;
+  }
+</style>
+  <title>GitHub Pages绑定自定义域名&nbsp;|&nbsp;Do not Evil</title>
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="GitHub Pages绑定自定义域名">
+  
+    <meta name="description" content="介绍如何绑定阿里云上购买的自定义域名">
+    <meta property="og:description" content="介绍如何绑定阿里云上购买的自定义域名">
+  
+  
+    <meta property="og:image" content="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📮&lt;/text&gt;&lt;/svg&gt;">
+  
+  <style>
+    .DateTagBar {
+      margin-top: 1.0rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="Navbar">
+  <a href="index.html">
+    <div class="Navbar__Btn">
+      
+        <span><img class="inline-img-icon" src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🤘&lt;/text&gt;&lt;/svg&gt;"></span>&nbsp;
+      
+      <span>Home</span>
+    </div>
+  </a>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</nav>
+  <header class="Header">
+    
+    <div class="Header__Spacer Header__Spacer--NoCover">
+    </div>
+    
+      <div class="Header__Icon">
+        <span><img class="inline-img-icon" src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📮&lt;/text&gt;&lt;/svg&gt;"></span>
+      </div>
+    
+    <h1 class="Header__Title">GitHub Pages绑定自定义域名</h1>
+    
+      <div class="DateTagBar">
+        
+          <span class="DateTagBar__Item DateTagBar__Date">Posted on Sun, Feb 12, 2023</span>
+        
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
+            <a href="tag/GitHub.html">GitHub</a>
+          </span>
+        
+      </div>
+    
+  </header>
+  <article id="https://www.notion.so/dc25b26a15f04fa08ee0dda714197dc7" class="PageRoot"><div id="https://www.notion.so/2c7856d6fdf742db99f589272ed1a3a4" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">GitHub Pages默认访问域名为 </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://xxx.github.io">xxx.github.io</a></span><span class="SemanticString">，如果你也觉得这个看起来不够简单和个性化。可以像我一样买一个域名，然后自定义一下。</span></span></p></div><div id="https://www.notion.so/770cabee3a7e4bdf89f928290bcb06af" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h2 id="https://www.notion.so/c5e67b098f5a4d26acc96633a9fc409a" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/c5e67b098f5a4d26acc96633a9fc409a"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">购买域名</span></span></h2><div id="https://www.notion.so/305f9429598f4eb7b0c5d36159902a48" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">国内平台挺多可以买的阿里云、腾讯云等，但现在都需要实名制才可以购买域名。如果不想实名，可以考虑使用国外平台，例如 </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.godaddy.com/zh-sg">Godaddy</a></span><span class="SemanticString"> (支持支付宝付款)、</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://domains.google/">Google Domain</a></span><span class="SemanticString">(看起来挺贵的)。</span></span></p></div><div id="https://www.notion.so/32eb7ace9eaf40b2a70ca1f4f4bfc8d5" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/4682357c1373474b9be17381db2a96a8" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">当然也可以申请一个免费域名，例如通过 </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://www.freenom.com/zh/freeandpaiddomains.html">Freenom</a></span><span class="SemanticString"> 申请免费的 .TK / .ML / .GA / .CF / .GQ后缀域名。</span></span></p></div><div id="https://www.notion.so/d6744ecf153f456f9c1f21567dca1a88" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><h2 id="https://www.notion.so/e777bbfea4074d8dada988e0020e2bb9" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/e777bbfea4074d8dada988e0020e2bb9"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">自定义域名</span></span></h2><div id="https://www.notion.so/5916bdf47ea847c7acdbe3bc46d376bf" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">因为我是在阿里云购买的域名，故下面会以阿里云的操作为例。</span></span></p></div><div id="https://www.notion.so/5cd2997c3db9475ab72c806dd8f9a332" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/60ad2eaab0ec4f26afa42586e7d6594e" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">在阿里云控制台，添加/修改域名解析设置， 先预览一下我设置的</span></span><div id="https://www.notion.so/f3a5d9dafaee4e91b80c6d6e8a4ba6d0" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5ee77d05-5b1a-42d7-95a1-82ba23e68030%2FUntitled.png?width=2268&amp;table=block&amp;id=f3a5d9da-faee-4e91-b80c-6d6e8a4ba6d0"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5ee77d05-5b1a-42d7-95a1-82ba23e68030%2FUntitled.png?width=2268&amp;table=block&amp;id=f3a5d9da-faee-4e91-b80c-6d6e8a4ba6d0" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/64596179f7ab49d5961ab9cd3a86e07e" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/f9b3f7d90d50453a9560e337783c12c1" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">因为域名可以包含多级，例如我申请了一个域名——xchb.fun, 可以有 www.xchb.fun， 或者 test.xchb.fun，针对这种需要配置不同的记录，上图可以看到主要有两类主机记录： </span><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">@ 和 * ，</strong></span><span class="SemanticString">也有其他类型，具体可以参考：</span></span></p></div><div id="https://www.notion.so/3224771cf50f4ac995952e35f5598f75" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0d0705c4-2de1-4969-9c6a-d9ed7c7d2a16%2FUntitled.png?width=770&amp;table=block&amp;id=3224771c-f50f-4ac9-9595-2e35f5598f75"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0d0705c4-2de1-4969-9c6a-d9ed7c7d2a16%2FUntitled.png?width=770&amp;table=block&amp;id=3224771c-f50f-4ac9-9595-2e35f5598f75" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/852af3d2de2042f7959f85294fe8fed7" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">同时会有不同的记录类型，A表示 IPV4， AAAA表示IPV6域名，一般配置这两个即可，其他还有一些类型如下：</span></span></p></div><div id="https://www.notion.so/6f4a3cb45d984b728d6496285b193f96" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fab415c46-871f-41cc-b94a-5492c3f51868%2FUntitled.png?width=814&amp;table=block&amp;id=6f4a3cb4-5d98-4b72-8d64-96285b193f96"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fab415c46-871f-41cc-b94a-5492c3f51868%2FUntitled.png?width=814&amp;table=block&amp;id=6f4a3cb4-5d98-4b72-8d64-96285b193f96" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/a5d5376a666d4f198a8e12fe81e65c02" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/a3c1be015a5d4de5a9d531a14f4e5a85" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">GitHub Pages 的DNS域名解析的IP地址为：</strong></span></span></p></div><pre id="https://www.notion.so/9726b7c9ecf7407c95f207d6567b7c37" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span><span class="token comment">// A record</span>
+<span class="token number">185.199</span><span class="token number">.108</span><span class="token number">.153</span>
+<span class="token number">185.199</span><span class="token number">.109</span><span class="token number">.153</span>
+<span class="token number">185.199</span><span class="token number">.110</span><span class="token number">.153</span>
+<span class="token number">185.199</span><span class="token number">.111</span><span class="token number">.153</span>
+
+<span class="token comment">// AAAA record</span>
+<span class="token number">2606</span><span class="token operator">:</span>50c0<span class="token operator">:</span><span class="token number">8000</span><span class="token operator">:</span><span class="token operator">:</span><span class="token number">153</span>
+<span class="token number">2606</span><span class="token operator">:</span>50c0<span class="token operator">:</span><span class="token number">8001</span><span class="token operator">:</span><span class="token operator">:</span><span class="token number">153</span>
+<span class="token number">2606</span><span class="token operator">:</span>50c0<span class="token operator">:</span><span class="token number">8002</span><span class="token operator">:</span><span class="token operator">:</span><span class="token number">153</span>
+<span class="token number">2606</span><span class="token operator">:</span>50c0<span class="token operator">:</span><span class="token number">8003</span><span class="token operator">:</span><span class="token operator">:</span><span class="token number">153</span></span></span></span></code></pre><div id="https://www.notion.so/52b88f1083fc405193a19de4703e1ef3" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">其他一些说明可以参考 </span></span></p></div><div id="https://www.notion.so/ffef94e629084f49bc8e0495ddbe7667" class="Bookmark"><a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain"><h5 class="Bookmark__Title">Managing a custom domain for your GitHub Pages site - GitHub Docs</h5><p class="Bookmark__Desc">You can set up or update certain DNS records and your repository settings to point the default domain for your GitHub Pages site to a custom domain.</p><p class="Bookmark__Link">https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain</p></a></div></li></ol><div id="https://www.notion.so/9f0a0982e50b4b7694e8f1202f8eb160" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><ol class="NumberedListWrapper"><li id="https://www.notion.so/577e94e2154f423cbb4ccbfa5fde0d45" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">配置GitHub  Pages设置自定义域名:</span></span><div id="https://www.notion.so/78ce048391f642169da5fc65645eff17" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7c57dfed-b08b-49d7-8d1c-b00831c17b70%2FUntitled.png?width=2318&amp;table=block&amp;id=78ce0483-91f6-4216-9da5-fc65645eff17"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7c57dfed-b08b-49d7-8d1c-b00831c17b70%2FUntitled.png?width=2318&amp;table=block&amp;id=78ce0483-91f6-4216-9da5-fc65645eff17" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/799dece0a68c4b22b9c02fc0599746f9" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">如果发现检测不通过，可以打开 命令行控制台，看一下域名解析的IP是否是上述所说那几个：</span></span></p></div><div id="https://www.notion.so/314594f2544c420b9612d80d2828b087" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Feea3ac83-5970-4e3f-aaa7-d7632f452019%2FUntitled.png?width=936&amp;table=block&amp;id=314594f2-544c-420b-9612-d80d2828b087"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Feea3ac83-5970-4e3f-aaa7-d7632f452019%2FUntitled.png?width=936&amp;table=block&amp;id=314594f2-544c-420b-9612-d80d2828b087" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/511844442fc6412b82a5e2216ff6f7d7" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div></li></ol><div id="https://www.notion.so/ce8c7ee7dfe2436284670a27b2cd88f8" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"></span></p></div><div id="https://www.notion.so/15050998e50145908c33db05988e0d1a" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">配置好域名之后，就可以使用自己的专属域名了~</span></span></p></div></article>
+  <footer class="Footer">
+  <div>&copy; Do not Evil 2022</div>
+  <div>&centerdot;</div>
+  <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+      rel="noopener noreferrer">Notablog</a>.
+  </div>
+</footer>
+</body>
+
+</html>
